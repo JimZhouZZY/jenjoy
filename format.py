@@ -19,7 +19,7 @@ def format_with_vim(filepath):
             "-c", "set tabstop=4",
             "-c", "set shiftwidth=4",
             "-c", "set expandtab",
-            "-c", "gg=G",
+            "-c", "normal gg=G",
             "-c", "wq",
             filepath
         ], check=True)
