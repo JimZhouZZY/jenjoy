@@ -140,9 +140,12 @@ def write_code_snippet_to_file(file_path, original_code, modified_code):
 def check_vim_available():
     if shutil.which("vim") is None:
         print("❌ vim is not available in PATH. Please install vim for auto-formatting.")
-        sys.exit(1)
+        # sys.exit(1)
 
 def format_with_vim(filepath):
+    if shutil.which("vim") is None:
+        print("⚠️  vim is not available in PATH. Skipping formatting.")
+        return
     try:
         subprocess.run([
             "vim", "--clean",
