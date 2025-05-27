@@ -2,6 +2,8 @@
 
 Jenjoy helps you write Java doc comments automatically using LLMs and formats your code with Vim.
 
+😊Enjoy you java with AI doc generator!
+
 ## Features
 
 - Automatically generates Javadoc comments for Java methods and classes.
